@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.9;
+
+contract challenge2{
+ 
+//ether value depends on the balance of ether in wallet
+ uint public constant ETHERX=5;
+ uint public weix;
+ uint public gweix;
+
+ function setWeix() public{
+     weix=ETHERX * 1e18;
+ }
+  function getWeix() public view returns(uint){
+      return weix;
+  }
+  function setGweix() public{
+      gweix=ETHERX * 1e10;
+  }
+  function getGweix() public view returns(uint){
+      return gweix;
+  }
+
+}
