@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+
+  contract state
+  {
+    uint public value;
+    uint public time;
+    uint public sum;
+    
+    function setValue() public {
+        value=9;
+    }
+    function setTime() public {
+        time=5;
+    }
+    function setSum() public{
+        sum= time + value;
+    }
+  }
